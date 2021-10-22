@@ -116,16 +116,17 @@
     <script>
         var player = 1;
         function newGame() {
-            document.getElementById('score1').innerHTML = 0;
-            document.getElementById('score1').innerHTML = 0;
-            document.getElementById('current1').innerHTML = 0;
-            document.getElementById('current2').innerHTML = 0;
-            document.getElementById('dice').innerHTML = '';
-            player = 1;
-            total = 0;
+            total=0;
             count = 0;
-
-            bodyload();
+            player = 1;
+            document.getElementById('score1').innerHTML = '0';
+            document.getElementById('score2').innerHTML = '0';
+            document.getElementById('current1').innerHTML = '0';
+            document.getElementById('current2').innerHTML = '0';
+            document.getElementById('dice').innerHTML = '';
+            document.getElementById('p1').style.background = 'greenyellow';
+            document.getElementById('p2').style.background = 'rgba(153, 236, 27, 0.537)';
+            // bodyload();
         }
 
         var count = 0;
